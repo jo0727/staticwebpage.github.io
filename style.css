@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+
 }
 img{
     width: 150px;
@@ -12,17 +12,17 @@ img{
     color:#fff;
 }
 li, a,button{
-    font-family: "Montserrat",sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+   
+    font-weight:bolder;
+    font-size: 13px;
     color:black;
     text-decoration: none;
 }
-header{
+nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 2% 6%;
 }
 .logo{
     cursor: pointer;
@@ -35,18 +35,19 @@ header{
     display: inline-block;
     padding: 0px 20px;
 }
-header nav__link li a{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #fff;
-/* transition-duration: all 0.3s ease 0s; */
+.nav__link li::after{
+content: "";
+width: 0%;
+height: 2px;
+background: #0F52BA;
+display: block;
+margin: auto;
+transition: 0.5s;
 }
-
-.nav__link li a :hover{
-    background: #fff;
-    color: #fff;
- }
- button{
+.nav__link li:hover::after{
+width: 100%;
+}
+ /* button{
     margin-left: 20px;
     padding: 9px 25px;
     background-color:#fff;
@@ -56,22 +57,72 @@ header nav__link li a{
     transition-duration: all 0.3s ease 0s;
  }
  button:hover{
-    background-color:rgb(33, 116, 116);
- }
-section{
-    position: relative;
+    background-color:rgb(133, 133, 126);
+ } */
+.header{
+    min-height: 100vh;
     width: 100%;
-    height: 100vh;
-    padding: 100px;
-
-}
-section img{
+    background-image: linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5)),url(../staticwebpage.github.io/mamooty.jpg);
+    background-position: center;
+    background-size: cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
 }
-#text{}
+.textbox{
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: all 0.3s ease 0s;
+}
+.btn:hover{
+    background-color:#0F52BA;
+}
+nav .fa{
+    display: none;
+}
+@media (max-width: 700px) {
+.nav__link li{
+    display: block;
+    text-decoration: none;
+}
+.nav__link{
+    position: absolute;
+    background-color: #777d86;
+    height: 100vh;
+    width: 200px;
+    top: 0%;
+    right: -200%;
+    text-align: left;
+    z-index: 2;
+}
+nav .fa{
+    display: block;
+    margin: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.nav__link ul{
+    padding: 20px;
+}
+.nav__link ul li{
+    padding: 5px;
+}
+.textbox{
+    position: absolute;
+    left: 140px;
+    top: 50%;
+}
+ .btn{
+    font-size: small;
+    position: absolute;
+    left: -40px;
+ }   
+}
