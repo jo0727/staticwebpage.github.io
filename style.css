@@ -7,7 +7,7 @@
 }
 img{
     width: 150px;
-    height: 30px;
+    height: 20px;
     text-decoration:none;
     color:#fff;
 }
@@ -24,10 +24,10 @@ nav{
     align-items: center;
     padding: 2% 6%;
 }
-.logo{
+/* .logo{
     cursor: pointer;
     margin-right: auto;
-}
+} */
 .nav__link{
     list-style: none;
 }
@@ -60,12 +60,13 @@ width: 100%;
     background-color:rgb(133, 133, 126);
  } */
 .header{
+    top: auto;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5)),url(../staticwebpage.github.io/mamooty.jpg);
     background-position: center;
     background-size: cover;
-    position: absolute;
+    position: relative;
 }
 .textbox{
     width: 50%;
@@ -76,7 +77,7 @@ width: 100%;
 .btn{
     display:inline-block;
     text-decoration: none;
-    padding: 12px 34px;
+    padding: 10px 30px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -116,14 +117,56 @@ nav .fa{
 .nav__link ul li{
     padding: 5px;
 }
-/* .textbox{
-    position: absolute;
-    left: 140px;
-    top: 50%;
+
 }
- .btn{
-    font-size: small;
-    position: absolute;
-    left: -40px; */
-/* }  */
+
+
+/* -------about---- */
+
+.about{
+    padding-top: 15px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    flex-basis: 31%;
+    background: #fce6e6;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    /* padding: 20px 12px; */
+    box-sizing: border-box;
+
+}
+h3{
+    padding-top: 10px;
+    text-align: center;
+    /* background: #fce6e6; */
+    margin-bottom: 5%;
+    border-radius: 10px;
+    /* padding: 20px 12px; */
+    box-sizing: border-box;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-around;
+}
+.actor-co{
+    width: 200px;
+    flex-basis: 10%;
+    background: #fce6e6;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 10px 10px;         
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.actor-co:hover{
+    box-shadow: 0 0 20px 0 rgba(102, 99, 98,0.5);
+}
+@media(max-width: 700px){
+.row{
+    flex-direction: column;
+    align-items: center;
+}
 }
