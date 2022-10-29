@@ -142,10 +142,10 @@ nav .fa{
 
 }
 h3{
-    padding-top: 10px;
+    /* padding-top: 500px; */
     text-align: center;
     /* background: #fce6e6; */
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     border-radius: 10px;
     /* padding: 20px 12px; */
     box-sizing: border-box;
@@ -153,18 +153,25 @@ h3{
 .row{
     margin-top: 5%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
+    /* background-image:linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5)); */
+    padding-top: 50px;
+    
 }
 .actor-co{
     width: 200px;
-    flex-basis: 10%;
+    flex-basis: 20%;
     background: #fce6e6;
     margin-bottom: 5%;
     border-radius: 10px;
-    padding: 10px 10px;         
+    padding: 50px 10px;         
     box-sizing: border-box;
     transition: 0.5s;
 
+}
+.actors{
+    background-image:linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5));
+    padding-top: 50px;
 }
 .actor-co:hover{
     box-shadow: 0 0 20px 0 rgba(102, 99, 98,0.5);
@@ -177,17 +184,46 @@ h3{
 }
 /* ------for-video----- */
 .trailers{
-    height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     background-image:linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5));
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5%;
+    padding: 10% 10%;
 }
 .back-video{
-height: max-content;
-width: 100vh;
-padding: auto;
+/* height: max-content;
+width: 100vh; */
+/* padding: auto; */
+position: absolute;
+/* align-items: center; */
+left: 10%;
+flex-basis: 10%;
+background: #fce6e6;
+margin-bottom: 5%;
+border-radius: 10px;
+padding: 10px 10px;         
+
+}
+h5{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+h3{
+    /* padding: 10px 10px; */
+    /* background-image:linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5)); */
+
+text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    width: 50%;
+    position: absolute;
+    
+    left: 25%;
 }
