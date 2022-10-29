@@ -159,27 +159,35 @@ h3{
     
 }
 .actor-co{
-    width: 200px;
-    flex-basis: 20%;
-    background: #fce6e6;
-    margin-bottom: 5%;
+    /* width: 200px; */
+    flex-basis: 32%;
+    /* background: #fce6e6; */
+    margin-bottom: 30%;
+    position: relative;
     border-radius: 10px;
-    padding: 50px 10px;         
-    box-sizing: border-box;
-    transition: 0.5s;
+    overflow: hidden;
 
 }
 .actors{
     background-image:linear-gradient(rgba(102, 99, 98,0.5),rgba(102, 99, 98,0.5));
     padding-top: 50px;
 }
-.actor-co:hover{
-    box-shadow: 0 0 20px 0 rgba(102, 99, 98,0.5);
-}
+/* .actor-co:hover{ */
+    /* box-shadow: 0 0 20px 0 rgba(102, 99, 98,0.5); */
+/* } */
 @media(max-width: 700px){
 .row{
     flex-direction: column;
     align-items: center;
+}
+h5{
+    display: none;
+}
+.back-video{
+    position: absolute;
+    left: 50px;
+    height: 180px;
+    width: 240px;
 }
 }
 /* ------for-video----- */
