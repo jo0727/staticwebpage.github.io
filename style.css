@@ -31,10 +31,10 @@ a{
 
 }
 
-p{
+.showcase-content p{
     margin: 0.5rem 0;
     font-weight: bold;
-    color: #ffffff;
+    color: white;
 }
 
 img{
@@ -90,10 +90,10 @@ img{
 }
 .showcase-content h1{
     font-weight: 650;
-    font-size: 3.125rem;
+    font-size: 50px;
     margin: 0 auto;
-    max-width: 800px;
-    line-height: 54px;
+    max-width: 900px;
+    line-height: 53px;
 }
 
 .showcase-content h3{
@@ -292,7 +292,10 @@ z-index: -1;
         grid-row: 1/2;
     }
   .FAQ{
+    border-top: 8px rgb(69, 69, 69) solid;
+padding: 50px; 
     text-align: center;
+    
   }
   .FAQ h1{
     padding-bottom: 40px;
@@ -316,9 +319,12 @@ z-index: -1;
 
   }
   .FAQ p{
-    padding-top:  80px;
+    padding-top:  40px;
     font-size: 1.2rem;
     font-weight: 200;
+    color: #f4f4f4;
+    padding-bottom: 20px;
+
   }
   .input{
     display: inline-grid;
@@ -345,6 +351,31 @@ z-index: -1;
     font-size: 1.5rem;
     color: white;
   }
-
+.footer-coloums ul{
+display:inline-block;
+/* align-content: center; */
+padding-left: 200px;
+padding-bottom: 40px;
+/* align-content: space-around; */
+}
+.footer-coloums ul li{
+    padding-bottom: 10px;
+}
+.footer-coloums ul li a{
+    text-decoration: solid;
+    color: #999999;
+    font-size: small;
+    font-weight: 50;
+    padding-bottom: 20px;
+}
+footer p{
+    padding-left: 200px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.footer{
+    border-top: 8px rgb(69, 69, 69) solid;
+padding: 50px; 
+}
       
    
